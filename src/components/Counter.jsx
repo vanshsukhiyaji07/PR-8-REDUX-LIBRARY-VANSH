@@ -25,19 +25,19 @@ function Counter() {
     }, [count])
 
     const style = {
-        fontSize: fontSize === "large" ? "40px" : "2000px",
-        color: isDark ? "white" : "black",
-        backgroundColor: isDark ? "black" : "white",
-        padding: "20px",
-        borderRadius: "10px"
+        backgroundColor : isDark ? "black": "White" ,
+        padding : "20px",
+        borderRadius : "8px",
+        fontSize : fontSize === "large" ? "40px":"20px",
+        color : isDark ? "white" : "black"
     }
 
     return (
         <>
-            <div className="container d-flex justify-content-center align-items-center w-100">
-                <div className="card p-4 text-center shadow-lg w-300" style={style}>
-                    <h2 className="mb-3">Count: <span >{count}</span></h2>
-                    <h2 className="mb-4 ">Double Count: <span>{doubleCount}</span></h2>
+            <div className="container d-flex justify-content-center align-items-center w-100" >
+                <div className="card p-4 text-center shadow-lg w-300"  style={style}>
+                    <h2 className="mb-3"  style={style}>Count: <span >{count}</span></h2>
+                    <h2 className="mb-4 " style={style}>Double Count: <span>{doubleCount}</span></h2>
                     <button className="btn btn-primary me-2 pb-2" onClick={Increment}>
                         Increment
                     </button>
